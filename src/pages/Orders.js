@@ -713,10 +713,10 @@ export default function Orders() {
 																<span>{data.quantity.toLocaleString()}</span>
 															</td>
 															<td className='xui-opacity-5'>
-																<span>{data.amount === 0 ? "Free" : "USD " + data.amount.toLocaleString()}</span>
+																<span>{data.amount === 0 ? "Free" : "NGN " + data.amount.toLocaleString()}</span>
 															</td>
 															<td className='xui-opacity-5'>
-																<span>{data.shipping_fee ? data.shipping_fee === 0 ? "Free" : "USD " + data.shipping_fee.toLocaleString() : "No shipping fee"}</span>
+																<span>{data.shipping_fee ? data.shipping_fee === 0 ? "Free" : "NGN " + data.shipping_fee.toLocaleString() : "No shipping fee"}</span>
 															</td>
 															<td className='xui-opacity-5'>
 																<span>{data.payment_method}</span>
@@ -1001,7 +1001,7 @@ export default function Orders() {
 												<hr></hr>
 												<p className="xui-opacity-4 xui-font-sz-100 xui-m-half"><span className="xui-font-w-bold">Category -</span> {viewOrder.data.product.category.name}</p>
 												<p className="xui-opacity-4 xui-font-sz-100 xui-m-half"><span className="xui-font-w-bold">Product -</span> {viewOrder.data.product.name}</p>
-												<p className="xui-opacity-4 xui-font-sz-100 xui-m-half"><span className="xui-font-w-bold">Product Price -</span> USD {viewOrder.data.product.sales_price ? <>{viewOrder.data.product.sales_price.toLocaleString()} <s> USD {viewOrder.data.product.price.toLocaleString()}</s> </> : viewOrder.data.product.price.toLocaleString()}</p>
+												<p className="xui-opacity-4 xui-font-sz-100 xui-m-half"><span className="xui-font-w-bold">Product Price -</span> NGN {viewOrder.data.product.sales_price ? <>{viewOrder.data.product.sales_price.toLocaleString()} <s> NGN {viewOrder.data.product.price.toLocaleString()}</s> </> : viewOrder.data.product.price.toLocaleString()}</p>
 												<p className="xui-opacity-4 xui-font-sz-100 xui-m-half"><span className="xui-font-w-bold">Remaining / Quantity (Max Quantity) -</span> {viewOrder.data.product.remaining.toLocaleString()} / {viewOrder.data.product.quantity.toLocaleString()} ({viewOrder.data.product.max_quantity.toLocaleString()})</p>
 												<hr></hr>
 												<p className="xui-opacity-4 xui-font-sz-100 xui-m-half" style={{ textDecoration: "underline" }}>Shipping Details: </p>
@@ -1016,9 +1016,9 @@ export default function Orders() {
 												<hr></hr>
 												<p className="xui-opacity-4 xui-font-sz-100 xui-m-half" style={{ textDecoration: "underline" }}>Order Details: </p>
 												<p className="xui-opacity-4 xui-font-sz-100 xui-m-half"><span className="xui-font-w-bold">Tracking Number -</span> {viewOrder.data.tracking_number}</p>
-												<p className="xui-opacity-4 xui-font-sz-100 xui-m-half"><span className="xui-font-w-bold">Shipping Fee -</span> USD {viewOrder.data.shipping_fee.toLocaleString()}</p>
+												<p className="xui-opacity-4 xui-font-sz-100 xui-m-half"><span className="xui-font-w-bold">Shipping Fee -</span> NGN {viewOrder.data.shipping_fee.toLocaleString()}</p>
 												<p className="xui-opacity-4 xui-font-sz-100 xui-m-half"><span className="xui-font-w-bold">Quantity -</span> {viewOrder.data.quantity.toLocaleString()}</p>
-												<p className="xui-opacity-4 xui-font-sz-100 xui-m-half"><span className="xui-font-w-bold">Amount -</span> USD {viewOrder.data.amount.toLocaleString()}</p>
+												<p className="xui-opacity-4 xui-font-sz-100 xui-m-half"><span className="xui-font-w-bold">Amount -</span> NGN {viewOrder.data.amount.toLocaleString()}</p>
 												<p className="xui-opacity-4 xui-font-sz-100 xui-m-half"><span className="xui-font-w-bold">Gateway -</span> {viewOrder.data.gateway}</p>
 												<p className="xui-opacity-4 xui-font-sz-100 xui-m-half"><span className="xui-font-w-bold">Payment Method -</span> {viewOrder.data.payment_method}</p>
 												<p className="xui-opacity-4 xui-font-sz-100 xui-m-half"><span className="xui-font-w-bold">Paid -</span> {

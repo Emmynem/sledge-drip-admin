@@ -241,11 +241,11 @@ export default function EditProductDetails() {
 											<form className="xui-form" layout="2" onSubmit={handleUpdateProductPrices}>
 												<div className='xui-d-grid xui-grid-col-1 xui-lg-grid-col-2 xui-grid-gap-1 xui-lg-grid-gap-2'>
 													<div className="xui-form-box xui-mt-2">
-														<label>Price (USD)</label>
+														<label>Price (NGN)</label>
 														<input className="xui-font-sz-90" type="number" min={0} value={UpdateProductPrice} onChange={UpdateProductHandlePrice} required placeholder="Enter price of product"></input>
 													</div>
 													<div className="xui-form-box xui-mt-2">
-														<label>Sales Price (USD) [Optional]</label>
+														<label>Sales Price (NGN) [Optional]</label>
 														<input className="xui-font-sz-90" type="number" min={0} value={UpdateProductSalesPrice} onChange={UpdateProductHandleSalesPrice} placeholder="Enter sales price of product"></input>
 													</div>
 												</div>

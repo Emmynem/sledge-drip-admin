@@ -25,7 +25,7 @@ export default function Dashboard() {
 							</div>
 							<div className='xui-bg-pos-center xui-bg-sz-cover xui-bdr-rad-half xui-overflow-hidden' style={{ backgroundImage: `url(${PatternImage})` }}>
 								<div className='xui-py-1 xui-px-2 xui-overlay xui-h-fluid-100'>
-									<h3 className='xui-font-sz-180 xui-font-w-normal'>{analytics ? <span>$ {analytics.data.transactions_amount_sum[0].total_amount ? analytics.data.transactions_amount_sum[0].total_amount.toLocaleString() : "0"} </span> : <Loading width="12" height="12" />}</h3>
+									<h3 className='xui-font-sz-180 xui-font-w-normal'>{analytics ? <span>NGN {analytics.data.transactions_amount_sum[0].total_amount ? analytics.data.transactions_amount_sum[0].total_amount.toLocaleString() : "0"} </span> : <Loading width="12" height="12" />}</h3>
 									<span className='xui-font-sz-90'>Transactions</span>
 								</div>
 							</div>
@@ -132,13 +132,13 @@ export default function Dashboard() {
 							</div>
 							<div className='xui-bg-pos-center xui-bg-sz-cover xui-bdr-rad-half xui-overflow-hidden' style={{ backgroundImage: `url(${PatternImage})` }}>
 								<div className='xui-py-1 xui-px-2 xui-overlay xui-h-fluid-100'>
-									<h3 className='xui-font-sz-180 xui-font-w-normal'>$ {analytics ? (analytics.data.order_amount_sum[0].total_amount ? analytics.data.order_amount_sum[0].total_amount.toLocaleString() : "0") : <Loading width="12" height="12" />}</h3>
+									<h3 className='xui-font-sz-180 xui-font-w-normal'>NGN {analytics ? (analytics.data.order_amount_sum[0].total_amount ? analytics.data.order_amount_sum[0].total_amount.toLocaleString() : "0") : <Loading width="12" height="12" />}</h3>
 									<span className='xui-font-sz-90'>Order Amount Sum</span>
 								</div>
 							</div>
 							<div className='xui-bg-pos-center xui-bg-sz-cover xui-bdr-rad-half xui-overflow-hidden' style={{ backgroundImage: `url(${PatternImage})` }}>
 								<div className='xui-py-1 xui-px-2 xui-overlay xui-h-fluid-100'>
-									<h3 className='xui-font-sz-180 xui-font-w-normal'>$ {analytics ? (analytics.data.order_shipping_fee_sum[0].total_shipping_fee ? analytics.data.order_shipping_fee_sum[0].total_shipping_fee.toLocaleString() : "0") : <Loading width="12" height="12" />}</h3>
+									<h3 className='xui-font-sz-180 xui-font-w-normal'>NGN {analytics ? (analytics.data.order_shipping_fee_sum[0].total_shipping_fee ? analytics.data.order_shipping_fee_sum[0].total_shipping_fee.toLocaleString() : "0") : <Loading width="12" height="12" />}</h3>
 									<span className='xui-font-sz-90'>Order Shipping Fee Sum</span>
 								</div>
 							</div>

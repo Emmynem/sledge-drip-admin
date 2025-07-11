@@ -335,10 +335,10 @@ export default function Disputes() {
 																<span>{data.order.quantity.toLocaleString()}</span>
 															</td>
 															<td className='xui-opacity-5'>
-																<span>{data.order.amount === 0 ? "Free" : "USD " + data.order.amount.toLocaleString()}</span>
+																<span>{data.order.amount === 0 ? "Free" : "NGN " + data.order.amount.toLocaleString()}</span>
 															</td>
 															<td className='xui-opacity-5'>
-																<span>{data.order.shipping_fee ? data.order.shipping_fee === 0 ? "Free" : "USD " + data.order.shipping_fee.toLocaleString() : "No shipping fee"}</span>
+																<span>{data.order.shipping_fee ? data.order.shipping_fee === 0 ? "Free" : "NGN " + data.order.shipping_fee.toLocaleString() : "No shipping fee"}</span>
 															</td>
 															<td className=''>
 																{
@@ -505,7 +505,7 @@ export default function Disputes() {
 												<hr></hr>
 												<p className="xui-opacity-4 xui-font-sz-100 xui-m-half"><span className="xui-font-w-bold">Category -</span> {viewDispute.data.order.product.category.name}</p>
 												<p className="xui-opacity-4 xui-font-sz-100 xui-m-half"><span className="xui-font-w-bold">Product -</span> {viewDispute.data.order.product.name}</p>
-												<p className="xui-opacity-4 xui-font-sz-100 xui-m-half"><span className="xui-font-w-bold">Product Price -</span> USD {viewDispute.data.order.product.sales_price ? <>{viewDispute.data.order.product.sales_price.toLocaleString()} <s> USD {viewDispute.data.order.product.price.toLocaleString()}</s> </> : viewDispute.data.order.product.price.toLocaleString()}</p>
+												<p className="xui-opacity-4 xui-font-sz-100 xui-m-half"><span className="xui-font-w-bold">Product Price -</span> NGN {viewDispute.data.order.product.sales_price ? <>{viewDispute.data.order.product.sales_price.toLocaleString()} <s> NGN {viewDispute.data.order.product.price.toLocaleString()}</s> </> : viewDispute.data.order.product.price.toLocaleString()}</p>
 												<hr></hr>
 												<p className="xui-opacity-4 xui-font-sz-100 xui-m-half" style={{ textDecoration: "underline" }}>Order Details: </p>
 												<p className="xui-opacity-4 xui-font-sz-100 xui-m-half"><span className="xui-font-w-bold">Unique Id - </span> 
@@ -517,9 +517,9 @@ export default function Disputes() {
 													</div>
 												</p>
 												<p className="xui-opacity-4 xui-font-sz-100 xui-m-half"><span className="xui-font-w-bold">Tracking Number -</span> {viewDispute.data.order.tracking_number}</p>
-												<p className="xui-opacity-4 xui-font-sz-100 xui-m-half"><span className="xui-font-w-bold">Shipping Fee -</span> USD {viewDispute.data.order.shipping_fee.toLocaleString()}</p>
+												<p className="xui-opacity-4 xui-font-sz-100 xui-m-half"><span className="xui-font-w-bold">Shipping Fee -</span> NGN {viewDispute.data.order.shipping_fee.toLocaleString()}</p>
 												<p className="xui-opacity-4 xui-font-sz-100 xui-m-half"><span className="xui-font-w-bold">Quantity -</span> {viewDispute.data.order.quantity.toLocaleString()}</p>
-												<p className="xui-opacity-4 xui-font-sz-100 xui-m-half"><span className="xui-font-w-bold">Amount -</span> USD {viewDispute.data.order.amount.toLocaleString()}</p>
+												<p className="xui-opacity-4 xui-font-sz-100 xui-m-half"><span className="xui-font-w-bold">Amount -</span> NGN {viewDispute.data.order.amount.toLocaleString()}</p>
 												<p className="xui-opacity-4 xui-font-sz-100 xui-m-half"><span className="xui-font-w-bold">Payment Method -</span> {viewDispute.data.order.payment_method}</p>
 												<p className="xui-opacity-4 xui-font-sz-100 xui-m-half"><span className="xui-font-w-bold">Paid -</span> {
 													viewDispute.data.order.paid ?

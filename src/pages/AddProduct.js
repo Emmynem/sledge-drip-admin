@@ -120,11 +120,11 @@ export default function AddProduct() {
 							</div>
 							<div className='xui-d-grid xui-grid-col-1 xui-lg-grid-col-2 xui-grid-gap-1 xui-lg-grid-gap-2'>
 								<div className="xui-form-box xui-mt-2">
-									<label>Price (USD)</label>
+									<label>Price (NGN)</label>
 									<input className="xui-font-sz-90" type="number" min={0} value={price} onChange={handlePrice} required placeholder="Enter price of product"></input>
 								</div>
 								<div className="xui-form-box xui-mt-2">
-									<label>Sales Price (USD) [Optional]</label>
+									<label>Sales Price (NGN) [Optional]</label>
 									<input className="xui-font-sz-90" type="number" min={0} value={salesPrice} onChange={handleSalesPrice} placeholder="Enter sales price of product"></input>
 								</div>
 							</div>

@@ -479,7 +479,7 @@ export default function Products() {
 																</div>
 															</td>
 															<td className='xui-opacity-5'>
-																<span><b>USD {data.sales_price ? <>{data.sales_price.toLocaleString()} <s> USD {data.price.toLocaleString()}</s> </> : data.price.toLocaleString()}</b></span>
+																<span><b>NGN {data.sales_price ? <>{data.sales_price.toLocaleString()} <s> NGN {data.price.toLocaleString()}</s> </> : data.price.toLocaleString()}</b></span>
 															</td>
 															<td className=''>
 																{
@@ -685,7 +685,7 @@ export default function Products() {
 										<div className="xui-m-1-half ">
 											<p className="xui-opacity-4 xui-font-sz-100 xui-m-half"><span className="xui-font-w-bold">Category -</span> {viewProduct.data.category.name}</p>
 											<p className="xui-opacity-4 xui-font-sz-100 xui-m-half"><span className="xui-font-w-bold">Name -</span> {viewProduct.data.name} ({viewProduct.data.stripped})</p>
-											<p className="xui-opacity-4 xui-font-sz-100 xui-m-half"><span className="xui-font-w-bold">Price -</span> USD {viewProduct.data.sales_price ? <>{viewProduct.data.sales_price.toLocaleString()} <s> USD {viewProduct.data.price.toLocaleString()}</s> </> : viewProduct.data.price.toLocaleString()}</p>
+											<p className="xui-opacity-4 xui-font-sz-100 xui-m-half"><span className="xui-font-w-bold">Price -</span> NGN {viewProduct.data.sales_price ? <>{viewProduct.data.sales_price.toLocaleString()} <s> NGN {viewProduct.data.price.toLocaleString()}</s> </> : viewProduct.data.price.toLocaleString()}</p>
 											<p className="xui-opacity-4 xui-font-sz-100 xui-m-half"><span className="xui-font-w-bold">Remaining / Quantity (Max Quantity) -</span> {viewProduct.data.remaining.toLocaleString()} / {viewProduct.data.quantity.toLocaleString()} ({viewProduct.data.max_quantity.toLocaleString()})</p>
 											<hr></hr>
 											<p className="xui-opacity-4 xui-font-sz-100 xui-m-half"><span className="xui-font-w-bold">Specification: </span></p>
@@ -938,11 +938,11 @@ export default function Products() {
 						</div>
 						<div className='xui-d-grid xui-grid-col-1 xui-lg-grid-col-2 xui-grid-gap-1 xui-lg-grid-gap-2'>
 							<div className="xui-form-box xui-mt-2">
-								<label>Price (USD)</label>
+								<label>Price (NGN)</label>
 								<input className="xui-font-sz-90" type="number" min={0} value={price} onChange={handlePrice} required placeholder="Enter price of product"></input>
 							</div>
 							<div className="xui-form-box xui-mt-2">
-								<label>Sales Price (USD) [Optional]</label>
+								<label>Sales Price (NGN) [Optional]</label>
 								<input className="xui-font-sz-90" type="number" min={0} value={salesPrice} onChange={handleSalesPrice} placeholder="Enter sales price of product"></input>
 							</div>
 						</div>
@@ -1092,11 +1092,11 @@ export default function Products() {
 					<form className="xui-form" layout="2" onSubmit={handleUpdateProductPrices}>
 						<div className='xui-d-grid xui-grid-col-1 xui-lg-grid-col-2 xui-grid-gap-1 xui-lg-grid-gap-2'>
 							<div className="xui-form-box xui-mt-2">
-								<label>Price (USD)</label>
+								<label>Price (NGN)</label>
 								<input className="xui-font-sz-90" type="number" min={0} value={UpdateProductPrice} onChange={UpdateProductHandlePrice} required placeholder="Enter price of product"></input>
 							</div>
 							<div className="xui-form-box xui-mt-2">
-								<label>Sales Price (USD) [Optional]</label>
+								<label>Sales Price (NGN) [Optional]</label>
 								<input className="xui-font-sz-90" type="number" min={0} value={UpdateProductSalesPrice} onChange={UpdateProductHandleSalesPrice} placeholder="Enter sales price of product"></input>
 							</div>
 						</div>
