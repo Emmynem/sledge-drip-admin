@@ -3,7 +3,7 @@ const {
 } = require("../hidden.json");
 
 const EMAIL_REGEX = /^[a-zA-Z0-9._:$!%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]$/;
-const baseAPIurl = "https://api.sledgedrip.com";
+const baseAPIurl = "https://sledgedripapi.xnyder.com";
 // const baseAPIurl = "http://localhost:853"; // for test
 const clouderUrl = "https://clouderapi.xnyder.com";
 
